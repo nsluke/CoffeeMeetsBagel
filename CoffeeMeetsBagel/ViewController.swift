@@ -7,22 +7,25 @@
 //
 
 import UIKit
-import Koloda
+
+private var numberOfCards: UInt = 5
+
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var kolodaView: KolodaView!
-
-    var images:[UIImage]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        kolodaView.dataSource = self
-        kolodaView.delegate = self
-
     }
 
+    
+    override func viewDidAppear(_ animated: Bool) {
+      //  let nextVC:TableViewController = TableViewController()
+        
+     //   self.navigationController?.pushViewController(nextVC, animated: true)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,28 +33,3 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: KolodaViewDelegate {
-    func kolodaDidRunOutOfCards(koloda: KolodaView) {
-//        dataSource.reset()
-    }
-    
-    func koloda(koloda: KolodaView, didSelectCardAtIndex index: UInt) {
-        UIApplication.shared.openURL(NSURL(string: "http://yalantis.com/")! as URL)
-    }
-}
-
-extension ViewController: KolodaViewDataSource {
-    
-    func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return images.count
-//        return 1
-    }
-
-    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return UIImageView(image: images[Int(index)])
-    }
-    
-    func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
-        return Bundle.main.loadNibNamed("OverlayView", owner: self, options: nil)?[0] as? OverlayView
-    }
-}

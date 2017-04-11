@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76BCF5E5B946B301F03B7FB0 /* Pods_CoffeeMeetsBagel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852970C2F7EC524AF3BA7555 /* Pods_CoffeeMeetsBagel.framework */; };
+		D53126E71E83948300644E7E /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = D53126E61E83948300644E7E /* People.json */; };
+		D53126E91E8394C800644E7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53126E81E8394C800644E7E /* TableViewController.swift */; };
+		D53126EB1E8396EE00644E7E /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53126EA1E8396EE00644E7E /* SecondTableViewController.swift */; };
 		D5A83F591E6150E000EF3D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A83F581E6150E000EF3D33 /* AppDelegate.swift */; };
 		D5A83F5B1E6150E000EF3D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A83F5A1E6150E000EF3D33 /* ViewController.swift */; };
 		D5A83F5E1E6150E000EF3D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A83F5C1E6150E000EF3D33 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		418B3235F11D113C47008FFC /* Pods-CoffeeMeetsBagel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeMeetsBagel.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeMeetsBagel/Pods-CoffeeMeetsBagel.release.xcconfig"; sourceTree = "<group>"; };
 		852970C2F7EC524AF3BA7555 /* Pods_CoffeeMeetsBagel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeMeetsBagel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53126E61E83948300644E7E /* People.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = People.json; sourceTree = "<group>"; };
+		D53126E81E8394C800644E7E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D53126EA1E8396EE00644E7E /* SecondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 		D5A83F551E6150E000EF3D33 /* CoffeeMeetsBagel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMeetsBagel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A83F581E6150E000EF3D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A83F5A1E6150E000EF3D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,11 +88,14 @@
 			children = (
 				D5A83F581E6150E000EF3D33 /* AppDelegate.swift */,
 				D5A83F5A1E6150E000EF3D33 /* ViewController.swift */,
+				D53126E81E8394C800644E7E /* TableViewController.swift */,
+				D53126EA1E8396EE00644E7E /* SecondTableViewController.swift */,
 				D5A83F5C1E6150E000EF3D33 /* Main.storyboard */,
 				D5A83F621E6150E000EF3D33 /* Assets.xcassets */,
 				D5A83F641E6150E000EF3D33 /* LaunchScreen.storyboard */,
 				D5A83F671E6150E000EF3D33 /* Info.plist */,
 				D5A83F5F1E6150E000EF3D33 /* CoffeeMeetsBagel.xcdatamodeld */,
+				D53126E61E83948300644E7E /* People.json */,
 			);
 			path = CoffeeMeetsBagel;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53126E71E83948300644E7E /* People.json in Resources */,
 				D5A83F661E6150E000EF3D33 /* LaunchScreen.storyboard in Resources */,
 				D5A83F631E6150E000EF3D33 /* Assets.xcassets in Resources */,
 				D5A83F5E1E6150E000EF3D33 /* Main.storyboard in Resources */,
@@ -217,7 +227,9 @@
 			files = (
 				D5A83F5B1E6150E000EF3D33 /* ViewController.swift in Sources */,
 				D5A83F611E6150E000EF3D33 /* CoffeeMeetsBagel.xcdatamodeld in Sources */,
+				D53126EB1E8396EE00644E7E /* SecondTableViewController.swift in Sources */,
 				D5A83F591E6150E000EF3D33 /* AppDelegate.swift in Sources */,
+				D53126E91E8394C800644E7E /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +395,7 @@
 				D5A83F6C1E6150E000EF3D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
